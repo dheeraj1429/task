@@ -1,0 +1,55 @@
+Hi, 
+In client part I am using this kind of structure,
+
+public/
+|
+src/
+|—— components/
+|	|—— Tabs/
+|	|	|——Tabs.tsx
+|	|	|——Tabs.styled.ts	
+|	|---- Input/
+|	|	|—— Input.tsx
+|	|	|—— Input.styled.ts
+|	|
+|—— pages/
+|	|—— Home/
+|	|   |—— components 
+|	|	|   |—— HeroSection/
+|	|		    |—— Hero.tsx
+|	|		    |—— Hero.styled.ts
+|	|—— page.tsx
+|	|				
+|	|—— About/
+|   |   |—— components
+|	|	|   |—— OurTeam/
+|	|	|	    |—— OurTeam.tsx
+|	|	|	    |—— OutTeam.styled.ts
+|	|	|   |—— ContactUs/
+|	|	|	    |—— ContactUs.tsx
+|	|	|	    |—— ContactUs.styled.ts
+|	|—— page.tsx
+|	|
+|—— utils/
+|	|—— DateTime.ts
+|	|
+|—— state/
+|	|—— strore.ts
+|	|—— hooks/
+|	|	|——useAppSelector.ts
+|	|	|——useAppDispatch.ts
+|	| —— apis/
+|	|—— features/
+
+src/components, global components that we can use anywhere in our application
+We can store our page components inside src/components folder but at that time 
+it is very difficult to maintain this application if the application grows normally.
+
+pages/**/components/** represent your local module component
+
+I am using headless UI in some of my projects, but there are no components like buttons, 
+rows, grids or others which we want. So I create my own components,
+
+I have already created some test cases, you can find them in component/buttons/__test__
+
+thanks!
